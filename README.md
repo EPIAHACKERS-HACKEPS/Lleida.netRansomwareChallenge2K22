@@ -106,7 +106,11 @@ IDESPBDS163005748056179W<<<<<<^7709280M2310037ESP<<<<<<<<<<<4^RAMON<VISA<<ROGER<
 IDESPBDS163005748056179W<<<<<<^7709287M2310037ESP<<<<<<<<<<<4^RAMOH<VISA<<ROGER<MIGUEL<<<<<<
 IDESPBDS163005648056179W<<<<<<^7709287M2310037ESP<<<<<<<<<<<4^RAMON<VISA<<ROGER<MIGUEL<<<<<<
               |                      |       |              |     |
-              6                      0       5              7     H
+              6                      |       |              |     |
+                                     |       |              |     H
+                                     0       |              |
+                                             5              |
+                                                            7     
 
 **Flag**
 | 6H057 |
