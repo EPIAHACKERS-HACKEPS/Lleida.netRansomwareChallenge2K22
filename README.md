@@ -1,4 +1,4 @@
-# 
+# Lleida.net  Ransomware Chanllenge
 
 ## Level 1
 
@@ -100,8 +100,17 @@ Utilitzant Postman vam extreure la conversa de missatges de la API vam extreure 
 Vam accedir a una API que validaba els DNI amb els documents que vam extraure de *documents.zip*. Vem poguer observar que hi habien algunes diferencies, hi habia un caracter que variaba segons el document.
 Vam ordenar els cambis de esquerra a dreta i de adal abaix extreient una cadene de caracters:
 
+IDESPBDS163005748056179W<<<<<<^7709287M2310037ESP<<<<<<<<<<<7^RAMON<VISA<<ROGER<MIGUEL<<<<<<
+IDESPBDS163005748056179W<<<<<<^7709287M2310035ESP<<<<<<<<<<<4^RAMON<VISA<<ROGER<MIGUEL<<<<<<
+IDESPBDS163005748056179W<<<<<<^7709280M2310037ESP<<<<<<<<<<<4^RAMON<VISA<<ROGER<MIGUEL<<<<<<
+IDESPBDS163005748056179W<<<<<<^7709287M2310037ESP<<<<<<<<<<<4^RAMOH<VISA<<ROGER<MIGUEL<<<<<<
+IDESPBDS163005648056179W<<<<<<^7709287M2310037ESP<<<<<<<<<<<4^RAMON<VISA<<ROGER<MIGUEL<<<<<<
+              |                      |       |              |     |
+              6                      0       5              7     H
+
 **Flag**
-|  |
+| 6057H |
+
 
 
 ## Level 10
