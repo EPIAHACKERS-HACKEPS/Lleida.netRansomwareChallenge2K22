@@ -1,4 +1,4 @@
-# Lleida.netRansomwareChallenge2K22
+# 
 
 ## Level 1
 
@@ -73,5 +73,41 @@ A partir de l'arxiu del repte anterior vam desencriptar el fitxer *.gpg* amb la 
 *https://api.lleida.net/dtd/messages/v3/en/index.html*
 *smoothie*
 *I2hgw1)IiS*
+
+Utilitzant Postman vam extreure la conversa de missatges de la API vam extreure un enllaç a google drive (*https://drive.google.com/drive/folders/1Bb14rnjPHSVNtXurfEl7umW9hC8-tvdA*).
+ Vam visualitzar un arxiu **document.zip** protegit amb contrasenya i una imatge **win.png** quecontenia els seguent:
+ ![win.png](https://i.imgur.com/qlaaVbh.png)
+ A partir d'aqui vem pensar que es tractava de la contrasenya del fitxer *documents.zip* i vam realitzar el seguent:
+
+ * Vem pensar que es tractaba d'un mes de l'any o d'un signe de l'horoscop ja que contenia una M que el significat es Sagitario.
+
+ * Vem realizar combinacions de paraules i frases fetes que poguesin estat relacionades ("La Gota Fria", estacions de l'any , algun dia especific ...).
+
+* Vem intentar visualitzar les metadades els fitxers i no vem poguer extreure res d'informació.
+
+* Vem realitzar cerques d'imatge inversa de tota la imatge i de fragments.
+
+* Vem realitzar una cerca del codi UNICODE dels seguents simbols.
+
+* Vem estar veient que al Notepad, Word i altres editors tenien unes fonts anomenades Webdings i Windings que contenien simbols i a traves d'escriure l'abecedari coplert amb la font arial i a la part inferior l'abecedari complert amb la font Webding i Windings i vam poguer extreure la frase significat.
+
+*☼︎ ♏︎ 💧︎ ❄︎ 📁︎ ❒︎ ☜︎ 📬︎* --> **ReST0rE.**
+
+**Flag**
+| ReST0rE. |
+
+## Level 9
+Vam accedir a una API que validaba els DNI amb els documents que vam extraure de *documents.zip*. Vem poguer observar que hi habien algunes diferencies, hi habia un caracter que variaba segons el document.
+Vam ordenar els cambis de esquerra a dreta i de adal abaix extreient una cadene de caracters:
+
+**Flag**
+|  |
+
+
+## Level 10
+**Hash:** *3deb17c3738d1abe68c3fa6f3e2b3a5c46519da55fb3503e69756f0e895faccf*
+Vem enviar un hash a traves d'un correo electronic Certificat entregant.
+
+
 
 
