@@ -1,5 +1,4 @@
-# Lleida.net  Ransomware Chanllenge
-
+# Lleida.net  Ransomware Challenge
 ## Level 1
 
 Vem descarregar l'arxiu i el vam analitzar amb un programa per visualitzar la imatge en Hexadecimal.
