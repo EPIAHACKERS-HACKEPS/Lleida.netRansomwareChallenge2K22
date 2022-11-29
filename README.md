@@ -1,13 +1,13 @@
 # Lleida.net  Ransomware Challenge
 ## Level 1
 
-Vem descarregar l'arxiu i el vam analitzar amb un programa per visualitzar la imatge en Hexadecimal.
+Vam descarregar l'arxiu i el vam analitzar amb un programa per visualitzar la imatge en Hexadecimal.
 ![Hex Editor Pro](https://i.imgur.com/81nMzIr.png)
 **Flag**
 | UNEXPECTED |
 ## Level 2
 
-Vem investigar la imatge i posava qu obrisim la llum, vam veure que al url posaba level/2/false i el vem cambiar a true. (https://hackathon.lleida.net/level/2/true)
+Vam investigar la imatge i posava que obríssim la llum, vam veure que a l'URL posava level/2/false i el vam canviar a true. (https://hackathon.lleida.net/level/2/true)
 ![Ruta](https://i.imgur.com/bE4ja4n.png)
    **Flag**
 --------------
