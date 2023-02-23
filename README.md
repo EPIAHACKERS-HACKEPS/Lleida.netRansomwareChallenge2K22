@@ -101,6 +101,7 @@ Utilitzant POSTMAN vam extreure la conversa de missatges de l'API , d’alla vam
 Vam accedir a una API que validava els DNI amb els documents que vam extraure de *documents.zip*. Vam poder observar que hi havia algunes diferències, hi havia un caràcter que variava segons el document.
 Vam ordenar els canvis d'esquerra a dreta i d'adal a baix extraient una cadena de caràcters:
 
+```
 ============================================================================================
 IDESPBDS163005748056179W<<<<<<^7709287M2310037ESP<<<<<<<<<<<7^RAMON<VISA<<ROGER<MIGUEL<<<<<<
 IDESPBDS163005748056179W<<<<<<^7709287M2310035ESP<<<<<<<<<<<4^RAMON<VISA<<ROGER<MIGUEL<<<<<<
@@ -112,9 +113,9 @@ IDESPBDS163005648056179W<<<<<<^7709287M2310037ESP<<<<<<<<<<<4^RAMON<VISA<<ROGER<
 2.----------------------------------------------------------------H
 3.-----------------------------------0
 4.-------------------------------------------5
-5.----------------------------------------------------------7
+5.----------------------------------------------------------
 ============================================================================================
-
+```
 **Flag**
 | 6H057 |
 
