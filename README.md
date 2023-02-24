@@ -1,20 +1,20 @@
 # Lleida.net  Ransomware Challenge
 ## Level 1
 
-Vam descarregar l'arxiu i el vam analitzar amb un programa per visualitzar la imatge en Hexadecimal.
+Descargamos el archivo y lo analizamos con un programa para visualizar la imagen en hexadecimal.
+
 ![Hex Editor Pro](https://i.imgur.com/81nMzIr.png)
 **Flag**
 | UNEXPECTED |
 ## Level 2
 
-Vam investigar la imatge i posava que obríssim la llum, vam veure que a l'URL posava level/2/false i el vam canviar a true. (https://hackathon.lleida.net/level/2/true)
+Investigamos la imagen y vimos que decía que abriéramos la luz, observamos que en la URL ponía level/2/false y lo cambiamos a true  asi siendo true ON y false OFF (https://hackathon.lleida.net/level/2/true)
 ![Ruta](https://i.imgur.com/bE4ja4n.png)
    **Flag**
 --------------
 
 ## Level 3
-Vam visualitzar la imatge fins a donar-nos compte que hi havia punts vermells i que feien relleu a algunes lletres.
-Totes aquestes formaven **lum poirot**, vam cercar a internet i vam tovar una pel·lícula anomenada POIROT que tenia el mateix barret i bigoti que al de l'endivinalla.
+Visualizamos la imagen hasta que nos dimos cuenta de que había puntos rojos que resaltaban algunas letras. Todas estas letras formaban "lum poirot", buscamos en internet y encontramos una película llamada "POIROT" que tenía el mismo sombrero y bigote que en el acertijo.
 
 **Flag**
 | POIROT |
@@ -24,42 +24,42 @@ Totes aquestes formaven **lum poirot**, vam cercar a internet i vam tovar una pe
 
 ## Level 4
 
-Vam visualitzar que hi havia dos possibles valors, negre o blanc, 1 o 0 i estaven agrupats per 8 posicions, com el binari, vam passar de binari a text i vam tovar:
+Visualizamos que había dos posibles valores, negro o blanco, 1 o 0, y estaban agrupados por 8 posiciones, como el binario, pasamos de binario a texto y encontramos:
 
 01000001 01001110 01001111 01001110 01011001 01001101 01001111 01010101 01010011
 **Flag**
 |ANONYMOUS|
+
 ## Level 5
-Vam visualitzar  un codi que estava estructurat com un text habitual, però que les lletres no formaven cap ordre lògic, com si haguessin aplicat ROT13, vam utilitzar un codi propi nostre en C# per esbrinar paraula per paraula el que posava, ja que tenia rotacions diferents.
+Visualizamos un código que estaba estructurado como un texto normal, pero que las letras no formaban ningún orden lógico, como si hubieran aplicado ROT13, utilizamos un código propio en C# para descifrar palabra por palabra lo que decía, ya que tenía rotaciones diferentes.
 ![Resolució Text](https://i.imgur.com/nJLJMNo.png)
-Posava una endevinalla i la resposta era la flag.
+Decía una adivinanza y la respuesta era la flag.
 **Flag**
 | TIME |
 
 
 ## Level 6
-Vam visualitzar una imatge d'un quadre, però ens vam fixar que tenia parts d'un codi QR, amb eines d'edició de fotografia vam retallar els QR de la imatge i vam poder reconstruir-lo per a llegir el resultat següent:
+Visualizamos una imagen de un cuadro, pero nos dimos cuenta de que tenía partes de un código QR, con herramientas de edición de fotografía cortamos los QR de la imagen y pudimos reconstruirlo para leer el resultado siguiente:
 
 34.247.204.45 06eb1263f226abac.com
 
-Vam utilitzar el fitxer etc/hosts per a poder accedir al Virtual Hosting.
+Utilizamos el archivo etc/hosts para poder acceder al Virtual Hosting.
 ![website 06eb1263f226abac.com](https://i.imgur.com/cKv6v2D.png)
-Vam fixar-nos que contenia codi JavaScript on vam passar de l'Array de caràcters a String i vam traduir-ho de Japonès a Espanyol, com vam trobar el següent:
+Nos fijamos en que contenía código JavaScript donde pasamos de Array de caracteres a String y lo traducimos del japonés al español, como encontramos lo siguiente:
 ![traducció](https://i.imgur.com/s4SrUx9.png)
-Vam veure que tots els personatges eren Robots, llavors vam caure en l'arxiu robots.txt tot i que en aquell moment no ens va funcionar ni amb .robotx.txt vam pensar que les webs molts cops tenen un “SiteMap”, vam accedir i vam visualitzar una ruta que era la d' “about.html”, d'allà vam accedir a l'Inspeccionar elemento on vam visualitzar el següent:
+Notamos que todos los personajes eran robots, entonces recurrimos al archivo `robots.txt`, aunque en ese momento no funcionó ni con `.robots.txt`. Pensamos que las webs a menudo tienen un "SiteMap", accedimos y visualizamos una ruta que era la de "about.html". Desde allí accedimos a la Inspección de elementos donde visualizamos lo siguiente:
 ![resolve](https://i.imgur.com/A0dsEIB.png)
 **Flag**
-|SMOOTHIE
+|SMOOTHIE|
 
 
 
 ## Level 7
-Vam descarregar l'arxiu i en visualitzar que posava "Good luck and strength!" i que tenia una obsessió amb els nombres primers vam pensar que havíem de fer Força bruta amb una WordList amb nombres primers en total de 100.000 nombres primers i seguidament del 100.000 als 200.000 primers.
+Descargamos el archivo y al ver que decía "Good luck and strength!" y que tenía una obsesión con los números primos, pensamos que teníamos que hacer Fuerza Bruta con una WordList con números primos, en total 100.000 números primos, y después del 100.000 hasta el 200.000.
 
+* Primero intentamos extraer el Hash del archivo GPG, pero no lo identificaba correctamente.
 
-* Primerament, vam provar d'extreure el Hash del fitxer GPG, però no admetia bé el HASH, no l'identificava.
-
-* Seguidament, vam provar d'extreure el Hash amb gpg2john i vam provar a fer Força Burta amb “John The Ripper” i la WordList de numeros primers generada.
+* Luego intentamos extraer el Hash con `gpg2john` y probamos la Fuerza Bruta con **"John The Ripper"** y la WordList de números primos generada.
 
 ![arxiu GPG](https://i.imgur.com/k5cSCbM.png)
 
@@ -68,29 +68,23 @@ Vam descarregar l'arxiu i en visualitzar que posava "Good luck and strength!" i 
 
 
 ## Level 8
-A partir de l'arxiu del repte anterior vam desencriptar el fitxer *.gpg* amb la clau *104369* i vam extreure la següent informació (un enllaç d'una api ):
-*https://api.lleida.net/dtd/messages/v3/en/index.html*
-*smoothie*
-*I2hgw1)IiS*
+A partir del archivo del reto anterior, desencriptamos el archivo .gpg con la clave 104369 y extrajimos la siguiente información: un enlace de una API, 
+https://api.lleida.net/dtd/messages/v3/en/index.html
+smoothie
+I2hgw1)IiS
 
-Utilitzant POSTMAN vam extreure la conversa de missatges de l'API , d’alla vam extreure un enllaç a Google Drive com aquest, (*https://drive.google.com/drive/folders/1Bb14rnjPHSVNtXurfEl7umW9hC8-tvdA*).
- Vam visualitzar un arxiu **document.zip** protegit amb contrasenya i una imatge **win.png** que contenia el següent:
+Utilizando POSTMAN extrajimos la conversación de mensajes de la API. De allí sacamos un enlace a Google Drive como este (https://drive.google.com/drive/folders/1Bb14rnjPHSVNtXurfEl7umW9hC8-tvdA). Visualizamos un archivo document.zip protegido con contraseña y una imagen win.png que contenía lo siguiente:
  
  ![win.png](https://i.imgur.com/qlaaVbh.png)
  
- A partir d'aquí vam pensar que es tractava de la contrasenya del fitxer *documents.zip* i vam realitzar el següent:
+ A partir de aquí, comenzamos a pensar que se trataba de la contraseña del archivo documents.zip y llevamos a cabo las siguientes acciones:
 
- * Vam pensar que es tractava d'un mes de l'any o d'un signe de l'horòscop, ja que contenia una M que el significat és Sagitari.
-
- * Vàrem realitzar combinacions de paraules i frases fetes que poguessin estar relacionades, amb “La Gota Fria”, estacions de l'any, algun dia específic ...
-
-* Vam intentar visualitzar les metadades els fitxers i no vam poder extreure res d'informació.
-
-* Vam portar a cap cerques d'imatge inversa de tota la imatge i de fragments.
-
-* Vam dur a terme una cerca del codi UNICODE dels següents símbols.
-
-* Vam estar veient que al Notepad, Word i altres editors tenien unes fonts anomenades Webdings i Windings que contenien símbols i a través d'escriure l'abecedari complet amb la font Arial i a la part inferior l'abecedari complet amb la font Webding i Windings i vam poder extreure la frase significada.
+* Pensamos que podría tratarse de un mes del año o un signo del zodiaco, ya que contenía una "M" cuyo significado es Sagitario.
+* Realizamos combinaciones de palabras y frases hechas que pudieran estar relacionadas con "La Gota Fría", estaciones del año, algún día específico...
+* Intentamos visualizar los metadatos del archivo, pero no pudimos extraer ninguna información.
+* Realizamos búsquedas de imágenes inversas de toda la imagen y de fragmentos.
+* Realizamos una búsqueda del código UNICODE de los siguientes símbolos.
+* Observamos que en el Notepad, Word y otros editores había fuentes llamadas Webdings y Windings que contenían símbolos y a través de escribir el abecedario completo con la fuente Arial y debajo el abecedario completo con la fuente Webding y Windings, pudimos extraer la frase significativa.
 
 *☼︎ ♏︎ 💧︎ ❄︎ 📁︎ ❒︎ ☜︎ 📬︎* --> **ReST0rE.**
 
@@ -98,8 +92,8 @@ Utilitzant POSTMAN vam extreure la conversa de missatges de l'API , d’alla vam
 | ReST0rE. |
 
 ## Level 9
-Vam accedir a una API que validava els DNI amb els documents que vam extraure de *documents.zip*. Vam poder observar que hi havia algunes diferències, hi havia un caràcter que variava segons el document.
-Vam ordenar els canvis d'esquerra a dreta i d'adal a baix extraient una cadena de caràcters:
+Accedimos a una API que validaba los DNI con los documentos que extrajimos de documents.zip. Pudimos observar que había algunas diferencias, había un carácter que variaba según el documento.
+Ordenamos los cambios de izquierda a derecha y de arriba abajo, extrayendo una cadena de caracteres:
 
 ```
 ============================================================================================
@@ -123,8 +117,7 @@ IDESPBDS163005648056179W<<<<<<^7709287M2310037ESP<<<<<<<<<<<4^RAMON<VISA<<ROGER<
 
 ## Level 10
 **Hash:** *3deb17c3738d1abe68c3fa6f3e2b3a5c46519da55fb3503e69756f0e895faccf*
-Vam enviar un hash a traves d'un correo electronic Certificat entregant.
-
+Enviamos un hash a través de un correo electrónico certificado y entregado de manera segura.
 
 
 
