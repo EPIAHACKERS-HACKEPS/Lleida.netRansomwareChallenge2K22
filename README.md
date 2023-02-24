@@ -4,11 +4,13 @@
 Descargamos el archivo y lo analizamos con un programa para visualizar la imagen en hexadecimal.
 
 ![Hex Editor Pro](https://i.imgur.com/81nMzIr.png)
+
 **Flag**
 | UNEXPECTED |
 ## Level 2
 
 Investigamos la imagen y vimos que decía que abriéramos la luz, observamos que en la URL ponía level/2/false y lo cambiamos a true  asi siendo true ON y false OFF (https://hackathon.lleida.net/level/2/true)
+
 ![Ruta](https://i.imgur.com/bE4ja4n.png)
    **Flag**
 --------------
